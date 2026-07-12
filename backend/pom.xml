@@ -17,7 +17,7 @@
     <artifactId>clientes</artifactId>
     <version>1.0.0</version>
     <name>registro-clientes</name>
-    <description>GA7-220501096-AA3-EV01 - Registro de Clientes (Spring Boot + HTML/JS)</description>
+    <description>GA7-220501096-AA3-EV02 - Registro de Clientes (Spring Boot + HTML/JS)</description>
 
     <!-- Configuracion de Java 17 -->
     <properties>
