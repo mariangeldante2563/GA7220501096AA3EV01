@@ -23,3 +23,5 @@ cd backend
 - `mvnw` y `mvnw.cmd` permiten compilar el proyecto sin tener Maven instalado globalmente.
 - El archivo `.mvn/wrapper/maven-wrapper.jar` se incluye en el repositorio para que el wrapper funcione.
 - Si necesitas cambiar la versión de Maven, edita `.mvn/wrapper/maven-wrapper.properties`.
+## proyecto con framework
+spring boot
