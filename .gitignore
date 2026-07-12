@@ -1,0 +1,47 @@
+# ============================================
+# Java / Maven
+# ============================================
+target/
+*.class
+*.jar
+!backend/mvnw
+!backend/mvnw.cmd
+!backend/.mvn/wrapper/maven-wrapper.properties
+!backend/.mvn/wrapper/maven-wrapper.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+# ============================================
+# IDEs
+# ============================================
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+.settings/
+.project
+.classpath
+.factorypath
+
+# ============================================
+# Configuracion local sensible
+# ============================================
+application-local.properties
+application-local.yml
+*.log
+
+# ============================================
+# Sistema operativo
+# ============================================
+.DS_Store
+Thumbs.db
+
+# ============================================
+# Dependencias y build
+# ============================================
+dependency-reduced-pom.xml
+build/
+out/

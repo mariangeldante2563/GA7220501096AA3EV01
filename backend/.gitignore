@@ -1,0 +1,13 @@
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+# Maven wrapper artifacts
+# The wrapper jar must be included so the project can build without a local Maven installation.
+.mvn/wrapper/maven-wrapper.properties
+mvnw
+mvnw.cmd

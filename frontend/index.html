@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes | SENA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Registro de Clientes</h1>
+            <p class="subtitle">GA7-220501096-AA3-EV01</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Formulario de registro / edicion -->
+        <section class="card">
+            <h2 id="titulo-form">Nuevo Cliente</h2>
+
+            <form id="form-cliente" novalidate>
+                <!-- Campo oculto para guardar el id cuando se edita -->
+                <input type="hidden" id="cliente-id">
+
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre"
+                           placeholder="Ej: Juan Perez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo"
+                           placeholder="Ej: juan@correo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Telefono</label>
+                    <input type="text" id="telefono" name="telefono"
+                           placeholder="Ej: 3001234567">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button type="button" id="btn-cancelar" class="btn btn-secondary hidden">Cancelar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Tabla de clientes registrados -->
+        <section class="card">
+            <h2>Clientes Registrados</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Telefono</th>
+                            <th class="actions-col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpo-tabla">
+                        <!-- Las filas se generan dinamicamente desde script.js -->
+                    </tbody>
+                </table>
+            </div>
+
+            <p id="mensaje-vacio" class="empty-message hidden">
+                No hay clientes registrados todavia.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>SENA - Analisis y Desarrollo de Software &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
