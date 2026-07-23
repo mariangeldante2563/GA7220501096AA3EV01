@@ -20,13 +20,6 @@ import java.util.List;
 /**
  * Controlador REST que expone los endpoints de la API de clientes.
  * 
- * Endpoints disponibles:
- *   GET    /api/clientes        -> listar todos
- *   GET    /api/clientes/{id}   -> buscar por id
- *   POST   /api/clientes        -> crear nuevo
- *   PUT    /api/clientes/{id}   -> actualizar existente
- *   DELETE /api/clientes/{id}   -> eliminar por id
- * 
  * @CrossOrigin habilita el acceso desde el frontend (HTML/JS) que corre
  * en otro origen. En produccion se debe restringir al dominio concreto.
  */
